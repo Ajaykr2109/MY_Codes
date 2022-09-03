@@ -33,7 +33,8 @@ sd(i)
 mode(strvector)
 sort(strvector)
 sort(strvector, decreasing = TRUE)
-order(strvector)#it will print the index from smallest to largest
+order(strvector)
+#it will print the index from smallest to largest
 
 #checking the location of the elements
 which.min(i)
@@ -87,7 +88,7 @@ vlist[3] <- TRUE
 length(vlist)
 "phone" %in% vlist #to check its in the list or not element(%in%)list_name
 
-vlist <- append(vlist, "welcome", after = 2)
+vlist <-append(vlist, "welcome", after = 2)
 vlist
 
 vlist <- vlist[-2]
@@ -152,3 +153,9 @@ i
 print(m[1,2])
 print(m[,2])
 print(m[1,])
+
+#merge two matrix
+m1<-matrix(1:12,nrow=3,ncol=4,byrow=FALSE)
+m2<-matrix(1:12,nrow=3,ncol=4,byrow=FALSE)
+m3<-cbind(m1,m2)
+m3

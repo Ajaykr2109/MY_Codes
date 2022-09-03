@@ -1,3 +1,1 @@
-#print substring
-string="ajay kumar chaturvedi"
-print(string[0:5])
+#remove duplicate list from tuple 
