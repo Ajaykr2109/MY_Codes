@@ -203,4 +203,57 @@ if(x>y & x>z)
   print("Invalid")
 }
 
+# 1.print the name of the day if elseif
+# 2.program to print name of the month
+# 3.number is even and greater than 20
 
+letters[1:5]
+# to print the consecutive letters
+
+#for loop
+for(i in 1:5)
+{
+  print(i)
+}
+
+for (i in range (1,5)) {
+   print(i)
+} 
+
+#while loop
+while (i<5) {
+  print(i)
+  i=i+1
+}
+
+#repeat loop
+im<-1
+repeat
+{
+  print(im)
+  im<-im+1
+  if(im>5)
+  {
+    break
+  }
+}
+
+# ^ power symbol
+for(n in 1:5)
+{
+  print(n^2)
+}
+
+num<-c(1,2,3,4,5)
+for(n in num)
+{
+  print(n^2)
+}
+
+print(num)
+
+x<-c(37,52,2,4,36,5,6,8)
+for(i in x)
+{
+  print(x[i])
+}
