@@ -159,3 +159,48 @@ m1<-matrix(1:12,nrow=3,ncol=4,byrow=FALSE)
 m2<-matrix(1:12,nrow=3,ncol=4,byrow=FALSE)
 m3<-cbind(m1,m2)
 m3
+
+#data frames hetrogenous type
+a<-c(1,2,3,4,5)
+b<-c(2+3i,5+1i,6+8i,3+5i,6+8i)
+c<-c(TRUE,FALSE,TRUE,FALSE,FALSE)
+d<-c(1L,2L,3L,4L,5L)
+e<-c("ajay","kumar","chaturvedi","D2117","A01")
+
+data.frame(a,b,c,d,e)
+
+#if else
+x<-c(5)
+if(x>0)
+{
+  print("Positive")
+}else if(x<0)
+{
+  print("Negative")
+}else if(x==0)
+{
+  print("Zero")
+}else
+{
+  print("Invalid")
+}
+
+#gratest among three numbers
+x<-c(5)
+y<-c(6)
+z<-c(7)
+if(x>y & x>z)
+{
+  print("x is greater")
+}else if(y>x & y>z)
+{
+  print("y is greater")
+}else if(z>x & z>y)
+{
+  print("z is greater")
+}else
+{
+  print("Invalid")
+}
+
+
