@@ -32,7 +32,7 @@ if(a==1):
 else:
     print("Fibonacci series is: ")
     for i in range (1,a+1):
-        print(fib(i),end=" ")
+        print(fib(i))
 print("")
 
 et=time.process_time()
