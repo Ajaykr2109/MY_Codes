@@ -88,7 +88,7 @@ vlist[3] <- TRUE
 length(vlist)
 "phone" %in% vlist #to check its in the list or not element(%in%)list_name
 
-vlist <-append(vlist, "welcome", after = 2)
+vlist <- append(vlist, "welcome", after = 2)
 vlist
 
 vlist <- vlist[-2]
@@ -101,8 +101,7 @@ vlist[c(1, 2, 3)]
 vlist[2:5]
 
 #looping concepts
-for (y in vlist)
-{
+for (y in vlist) {
   print(vlist[y])
 }
 
@@ -131,75 +130,70 @@ matrix(seq(1:12), nrow = 3, ncol = 4)
 matrix(seq(1:12), nrow = 6, ncol = 2)
 matrix(seq(1:12), nrow = 2, ncol = 6)
 
-m<-matrix(
+m <- matrix(
   1:12,
   nrow = 3,
   ncol = 4,
   byrow = FALSE,
-  dimnames = list(c("ROw1","ROW2","ROW3"), c("a", "b", "c","d"))
+  dimnames = list(c("ROw1", "ROW2", "ROW3"), c("a", "b", "c", "d"))
 )
 
-rownames(m)<-c("R1","R2","R3")
-colnames(m)<-c("C1","C2","C3","C4")
+rownames(m) <- c("R1", "R2", "R3")
+colnames(m) <- c("C1", "C2", "C3", "C4")
 m
 
-cbind(c(1,2,3,4),c(4,5,6,7))
-rbind(c(1,2,3,4),c(4,5,6,7))
+cbind(c(1, 2, 3, 4), c(4, 5, 6, 7))
+rbind(c(1, 2, 3, 4), c(4, 5, 6, 7))
 
-matrix(i,nrow=2)
-i<-dim(i)<-c(3,2)
+matrix(i, nrow = 2)
+i <- dim(i) <- c(3, 2)
 i
 
-print(m[1,2])
-print(m[,2])
+print(m[1, 2])
+print(m[, 2])
 print(m[1,])
 
 #merge two matrix
-m1<-matrix(1:12,nrow=3,ncol=4,byrow=FALSE)
-m2<-matrix(1:12,nrow=3,ncol=4,byrow=FALSE)
-m3<-cbind(m1,m2)
+m1 <- matrix(1:12, nrow = 3, ncol = 4, byrow = FALSE)
+m2 <- matrix(1:12, nrow = 3, ncol = 4, byrow = FALSE)
+m3 <- cbind(m1, m2)
 m3
 
 #data frames hetrogenous type
-a<-c(1,2,3,4,5)
-b<-c(2+3i,5+1i,6+8i,3+5i,6+8i)
-c<-c(TRUE,FALSE,TRUE,FALSE,FALSE)
-d<-c(1L,2L,3L,4L,5L)
-e<-c("ajay","kumar","chaturvedi","D2117","A01")
+a <- c(1, 2, 3, 4, 5)
+b <- c(2+3i, 5+1i, 6+8i, 3+5i, 6+8i)
+c <- c(TRUE, FALSE, TRUE, FALSE, FALSE)
+d <- c(1L, 2L, 3L, 4L, 5L)
+e <- c("ajay", "kumar", "chaturvedi", "D2117", "A01")
 
-data.frame(a,b,c,d,e)
+df <- data.frame(a, b, c, d, e)
+summary(df) #
+str(df) #structure of the data frame
+
 
 #if else
-x<-c(5)
-if(x>0)
-{
+x <- c(5)
+if (x > 0) {
   print("Positive")
-}else if(x<0)
-{
+} else if (x < 0) {
   print("Negative")
-}else if(x==0)
-{
+} else if (x == 0) {
   print("Zero")
-}else
-{
+} else {
   print("Invalid")
 }
 
 #gratest among three numbers
-x<-c(5)
-y<-c(6)
-z<-c(7)
-if(x>y & x>z)
-{
+x <- c(5)
+y <- c(6)
+z <- c(7)
+if (x > y & x > z) {
   print("x is greater")
-}else if(y>x & y>z)
-{
+} else if (y > x & y > z) {
   print("y is greater")
-}else if(z>x & z>y)
-{
+} else if (z > x & z > y) {
   print("z is greater")
-}else
-{
+} else {
   print("Invalid")
 }
 
@@ -211,49 +205,43 @@ letters[1:5]
 # to print the consecutive letters
 
 #for loop
-for(i in 1:5)
-{
+for (i in 1:5) {
   print(i)
 }
 
-for (i in range (1,5)) {
-   print(i)
-} 
+for (i in range(1, 5)) {
+  print(i)
+}
 
 #while loop
-while (i<5) {
+while (i < 5) {
   print(i)
-  i=i+1
+  i = i + 1
 }
 
 #repeat loop
-im<-1
-repeat
-{
+im <- 1
+repeat {
   print(im)
-  im<-im+1
-  if(im>5)
-  {
+  im <- im + 1
+  if (im > 5) {
     break
   }
 }
 
 # ^ power symbol
-for(n in 1:5)
-{
-  print(n^2)
+for (n in 1:5) {
+  print(n ^ 2)
 }
 
-num<-c(1,2,3,4,5)
-for(n in num)
-{
-  print(n^2)
+num <- c(1, 2, 3, 4, 5)
+for (n in num) {
+  print(n ^ 2)
 }
 
 print(num)
 
-x<-c(37,52,2,4,36,5,6,8)
-for(i in x)
-{
+x <- c(37, 52, 2, 4, 36, 5, 6, 8)
+for (i in x) {
   print(x[i])
 }
