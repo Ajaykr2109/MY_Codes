@@ -29,4 +29,4 @@ def si(p,r,t):
 print(si(p=100,r=10,t=2))
 #print(si(200,20,5))
 
-#for global use we need write //global// keyword infront of the local variable so that we can access and perform on globa variable.
+#for global use we need write //global// keyword infront of the local variable so that we can access and perform on global variable.
