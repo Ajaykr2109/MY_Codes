@@ -23,6 +23,48 @@ i / j
 x <- c(5, 6, 7, 8, 10, 19)
 sd(x)
 
+#for loop
+for (i in 1:5) {
+  print(i)
+}
+
+for (i in range(1, 5)) {
+  print(i)
+}
+
+#while loop
+while (i < 5) {
+  print(i)
+  i = i + 1
+}
+
+#repeat loop
+im <- 1
+repeat {
+  print(im)
+  im <- im + 1
+  if (im > 5) {
+    break
+  }
+}
+
+# ^ power symbol
+for (n in 1:5) {
+  print(n ^ 2)
+}
+
+num <- c(1, 2, 3, 4, 5)
+for (n in num) {
+  print(n ^ 2)
+}
+
+print(num)
+
+x <- c(37, 52, 2, 4, 36, 5, 6, 8)
+for (i in x) {
+  print(x[i])
+}
+
 #in-built functions
 sum(i)
 mean(i)
@@ -35,6 +77,40 @@ sort(strvector)
 sort(strvector, decreasing = TRUE)
 order(strvector)
 #it will print the index from smallest to largest
+
+
+#if else
+x <- c(5)
+if (x > 0) {
+  print("Positive")
+} else if (x < 0) {
+  print("Negative")
+} else if (x == 0) {
+  print("Zero")
+} else {
+  print("Invalid")
+}
+
+#gratest among three numbers
+x <- c(5)
+y <- c(6)
+z <- c(7)
+if (x > y & x > z) {
+  print("x is greater")
+} else if (y > x & y > z) {
+  print("y is greater")
+} else if (z > x & z > y) {
+  print("z is greater")
+} else {
+  print("Invalid")
+}
+
+# 1.print the name of the day if elseif
+# 2.program to print name of the month
+# 3.number is even and greater than 20
+
+letters[1:5]
+# to print the consecutive letters
 
 #checking the location of the elements
 which.min(i)
@@ -145,9 +221,9 @@ m
 cbind(c(1, 2, 3, 4), c(4, 5, 6, 7))
 rbind(c(1, 2, 3, 4), c(4, 5, 6, 7))
 
-matrix(i, nrow = 2)
-i <- dim(i) <- c(3, 2)
-i
+# matrix(i, nrow = 2)
+# i <- dim(i) <- c(3, 2)
+# i
 
 print(m[1, 2])
 print(m[, 2])
@@ -171,77 +247,7 @@ summary(df) #
 str(df) #structure of the data frame
 
 
-#if else
-x <- c(5)
-if (x > 0) {
-  print("Positive")
-} else if (x < 0) {
-  print("Negative")
-} else if (x == 0) {
-  print("Zero")
-} else {
-  print("Invalid")
-}
-
-#gratest among three numbers
-x <- c(5)
-y <- c(6)
-z <- c(7)
-if (x > y & x > z) {
-  print("x is greater")
-} else if (y > x & y > z) {
-  print("y is greater")
-} else if (z > x & z > y) {
-  print("z is greater")
-} else {
-  print("Invalid")
-}
-
-# 1.print the name of the day if elseif
-# 2.program to print name of the month
-# 3.number is even and greater than 20
-
-letters[1:5]
-# to print the consecutive letters
-
-#for loop
-for (i in 1:5) {
-  print(i)
-}
-
-for (i in range(1, 5)) {
-  print(i)
-}
-
-#while loop
-while (i < 5) {
-  print(i)
-  i = i + 1
-}
-
-#repeat loop
-im <- 1
-repeat {
-  print(im)
-  im <- im + 1
-  if (im > 5) {
-    break
-  }
-}
-
-# ^ power symbol
-for (n in 1:5) {
-  print(n ^ 2)
-}
-
-num <- c(1, 2, 3, 4, 5)
-for (n in num) {
-  print(n ^ 2)
-}
-
-print(num)
-
-x <- c(37, 52, 2, 4, 36, 5, 6, 8)
-for (i in x) {
-  print(x[i])
-}
+df1<-data.frame(Training=c("Strength","Stamina","Other"),Pulse=(c(100,150,120)),Duration=c(60,30,45))
+df1[1] #to print the first row
+df1[["Training"]] #to print the column
+df1$Training #to print the column

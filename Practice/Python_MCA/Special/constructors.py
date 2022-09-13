@@ -21,24 +21,24 @@ class animal:
 
     @dispatch() #overloaded #overloads
     def __init__(self):
-        print("animal constructor  1")
+        print("constructor 1")
         self.__init__(2,2)
         
     @dispatch(int, int) #@Overload 
     def __init__(self, i, j):
-        print("animal constructor 2")
-        i *= j
-        self.__init__()
-        print(i)
+        print("constructor 2")
+        #i *= j
+        self.__init__(2,2,2)
+       # print(i)
         
     @dispatch(int,int,int)
     def __init__(self, j, k, l):
-        print("4 int args")
-        x=j**k**l
-        print(x)
+        print("Constructor 3")
+       # x=j**k**l
+       # print(x)
 
 
-a = animal(4,4,4)
+a = animal()
 
 et=time.process_time()
 print(et-st)
