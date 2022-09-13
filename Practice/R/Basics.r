@@ -247,7 +247,20 @@ summary(df) #
 str(df) #structure of the data frame
 
 
-df1<-data.frame(Training=c("Strength","Stamina","Other"),Pulse=(c(100,150,120)),Duration=c(60,30,45))
+df1 <- data.frame(Training = c("Strength", "Stamina", "Other"), Pulse = (c(100, 150, 120)), Duration = c(60, 30, 45))
 df1[1] #to print the first row
 df1[["Training"]] #to print the column
 df1$Training #to print the column
+
+newdf <- rbind(df1, c("ABC", 140, 25))
+newdf
+df1
+
+nncol <- cbind(df1, Result = c(TRUE, FALSE, TRUE))
+nncol
+df1[-c(1), - c(1)] #to remove the row and column
+
+dim(df1) #to print the dimension of the data frame'
+nrow(df1) #to print the number of rows
+ncol(df1) #to print the number of columns
+length(df1) # to print the column numbers
