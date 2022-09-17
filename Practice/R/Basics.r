@@ -264,3 +264,35 @@ dim(df1) #to print the dimension of the data frame'
 nrow(df1) #to print the number of rows
 ncol(df1) #to print the number of columns
 length(df1) # to print the column numbers
+
+# stats
+# # b <- c(82, 83, 97, 55, 67, 53) #front
+# # sd(b)
+# # mean(b)
+# # var(b)
+
+# # a <- c(83, 78, 68, 61, 77, 54, 69, 51, 63) #middle
+# # sd(a)
+# # mean(a)
+# # var(a)
+
+# # c <- c(38, 59, 55, 66, 45, 52, 52, 61)
+# # sd(c)
+# # mean(c)
+# # var(c)
+
+#install.packages()
+.libPaths()
+
+
+x <- c(10, 20, 30, 40)
+pie(x)
+
+#pie(variable,label,main(title),)
+barplot(x)
+
+data <- read.csv("C:/Users/ajay/Desktop/ajay.csv") #to read the csv file
+data1 <- read.excel("C:/Users/ajay/Desktop/ajay.xlsx") #to read the excel file
+
+
+

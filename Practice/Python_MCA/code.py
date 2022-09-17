@@ -9,3 +9,4 @@ def concatinate(lst):
         return n1
 n1=[(3, 4), (3, 5), (3, 9), (6, 11), (6, 8, 7)]      
 print(concatinate(n1))
+
