@@ -15,30 +15,31 @@ from multipledispatch import dispatch
 from timeit import timeit
 
 
-st=time.process_time()
+st = time.process_time()
+
 
 class animal:
 
-    @dispatch() #overloaded #overloads
+    @dispatch()  # overloaded #overloads
     def __init__(self):
         print("constructor 1")
-        self.__init__(2,2)
-        
-    @dispatch(int, int) #@Overload 
+        self.__init__(2, 2)
+
+    @dispatch(int, int)  # @Overload
     def __init__(self, i, j):
         print("constructor 2")
         #i *= j
-        self.__init__(2,2,2)
+        #self.__init__(2, 2, 2)
        # print(i)
-        
-    @dispatch(int,int,int)
+
+    @dispatch(int, int, int)
     def __init__(self, j, k, l):
         print("Constructor 3")
-       # x=j**k**l
-       # print(x)
+        x = j**k**l
+        print(x)
 
 
-a = animal()
+a = animal(10, 10)
 
-et=time.process_time()
+et = time.process_time()
 print(et-st)
