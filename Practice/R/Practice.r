@@ -1,4 +1,4 @@
-vlist <- list(1, TRUE, "CAP787", "CAP788", 2+5i, FALSE)
+vlist <- list(1, TRUE, "CAP787", "CAP788", 2 + 5i, FALSE)
 vlist[c(3, 6)]
 
 vlist[3] <- "Hello"
@@ -13,3 +13,7 @@ mat
 rownames(mat) <- c("A", "B", "C")
 colnames(mat) <- c("a", "b", "c")
 mat
+
+
+
+modf(10.01)

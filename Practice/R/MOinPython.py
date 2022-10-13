@@ -1,0 +1,67 @@
+import random
+
+
+a = 10
+b = 20
+print(a * b)
+print(a / b)
+print(a + b)
+print(a - b)
+print(a ** b)
+print(a % b)
+print(a // b)
+
+if a >= 18:
+    print("A,You are not eligible to vote")
+else:
+    print("You are not eligible to vote")
+if b >= 18:
+    print("B,You are not eligible to vote")
+else:
+    print("You are not eligible to vote")
+
+
+a = [10, 20, 30, 40, 50]
+b, c, d, e, f = a
+# print(b)
+# print(c)
+# print(d)
+# print(e)
+# print(f)
+
+#global variable
+
+
+z = 10
+
+
+def func():
+    global z
+    z = 100
+    print(z)
+
+
+print(z)
+
+func()
+print(z)
+
+
+list1 = ['ajay', 'kumar', 'chaturvedi']
+print(random.choice(list1))
+
+list = ['A', 'b', 'c']
+print(random.shuffle(list), list)
+
+if "a" in list:
+    print("a is present")
+else:
+    print("a is not present")
+
+if "ajay" in list1:
+    print("ajay is present")
+else:
+    print("ajay is not present")
+
+a = "hello, world!"
+print(a[2:5])
