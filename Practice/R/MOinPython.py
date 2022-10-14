@@ -29,7 +29,7 @@ b, c, d, e, f = a
 # print(e)
 # print(f)
 
-#global variable
+# global variable
 
 
 z = 10
@@ -63,5 +63,36 @@ if "ajay" in list1:
 else:
     print("ajay is not present")
 
-a = "hello, world!"
+a = "Hello, woORld!"
 print(a[2:5])
+
+print(a.upper())
+print(a.lower())
+print(a.capitalize())
+print(a.title())
+#a = "-------------Hello, woORld!------------------------------------"
+# lstrip & strip to trim oout characters from the given string
+print(a.rstrip('-'))
+print(min(a))
+print(max(a))
+
+
+# occurence of character in string
+print("")
+print(a.index('w', 0, len(a)))
+print(a.count('w', 0, len(a)))
+print(a.find('w', 0, len(a)))
+
+b = "my world ajay 🤣"
+
+# print(a.join(b))
+
+x = a.split(',')
+print(x)
+
+first = "data"
+last = "scinece"
+last_last = "toolbox"
+
+print(first+last+last_last)
+print(first+" "+last+" "+last_last)

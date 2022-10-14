@@ -1,4 +1,3 @@
-from math import modf
 
 
 class B1:
@@ -22,7 +21,7 @@ class B2:
 class D(B1, B2):
     def __init__(self, t, t1, t2):
         super().__init__(t)
-        super(B1, self).__init__(t1)
+        super(B1, self).__init__(self, t1)
         self.d = t2
         B1.display(self)
         B2.display(self)
