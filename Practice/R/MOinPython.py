@@ -1,5 +1,7 @@
 import random
 
+import numpy
+
 
 a = 10
 b = 20
@@ -96,3 +98,10 @@ last_last = "toolbox"
 
 print(first+last+last_last)
 print(first+" "+last+" "+last_last)
+
+m = 8
+n = 'ajay'
+print(str(m)+n)
+
+
+arr=NUMPY.array([1,2,3,4,5])

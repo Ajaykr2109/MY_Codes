@@ -291,7 +291,8 @@ pie(x)
 # pie(variable,label,main(title),)
 barplot(x)
 
-# data <- read.csv("C:/Users/ajay/Desktop/ajay.csv") #to read the csv file
+ data <- read.csv("C:/Users/ajay/Desktop/ajay.csv") #to read the csv file
 # data1 <- read.excel("C:/Users/ajay/Desktop/ajay.xlsx") #to read the excel file
 
 install.packages("rmarkdown")
+``
