@@ -1,18 +1,22 @@
-
-
 class B1:
     def __init__(self, t):
         self.s = t  # instance variable and it can be inherited
-       # print("B1 constructor", self.s)
+
+    # print("B1 constructor", self.s)
 
     def display(self):
         print("B1 display", self.s)
 
 
+b = B1(10)
+B = B1(20)
+
+
 class B2:
     def __init__(self, t):
         self.s = t
-      #  print("B2 constructor", self.s)
+
+    #  print("B2 constructor", self.s)
 
     def display(self):
         print("B2 display", self.s)

@@ -18,8 +18,8 @@ df2
 
 #installing package to read excel file
 # install.packages("readxl")
-excel_file <- read.csv("C:/Users/ENGEE/Desktop/CA2.csv")
-excel_file
-excel_file[["CCA3"]]
+# excel_file <- read.csv("C:/Users/ENGEE/Desktop/CA2.csv")
+# excel_file
+# excel_file[["CCA3"]]
 
-install.packages("rmarkdown")
+# install.packages("rmarkdown")

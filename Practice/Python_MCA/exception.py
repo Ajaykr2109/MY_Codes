@@ -1,20 +1,20 @@
-# try:
-#     a = int(input("Enter a number: "))
-#     if a == 0:
-#         raise ("ZeroDivisionError")
-#     b = int(input("Enter a number: "))
-#     print(a/b)
+try:
+    a = int(input("Enter a number: "))
+    if a == 0:
+        raise ("ZeroDivisionError")
+    b = int(input("Enter a number: "))
+    print(a/b)
 
-# except ZeroDivisionError:
-#     print("Enter non zero value as denominator")
+except ZeroDivisionError:
+    print("Enter non zero value as denominator")
 
-# except ValueError:
-#     print("Something wrong")
+except ValueError:
+    print("Something wrong")
 
-# except:
-#     print("wrong")
-# else:
-#     print(a, b)
+except:
+    print("wrong")
+else:
+    print(a, b)
 
 
 # a = '5'

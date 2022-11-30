@@ -61,3 +61,14 @@ plt.legend(loc=4)
 plt.xlabel("Date")
 plt.ylabel("Price")
 plt.show()
+
+# create a dataframer by using dictionary and slice to show 2 rows and 3 columns
+df = pd.DataFrame(
+    {"A": [1, 2, 3], "B": [4, 5, 6], "C": [7, 8, 9]}, index=["a", "b", "c"]
+)
+print(df)
+print(df.loc[["a", "b"], ["A", "B"]])
+
+# create a 3*4 ndarray and display the count of elements in it
+ndarray = np.array([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]])
+print(ndarray.size)
