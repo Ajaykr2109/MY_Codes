@@ -1,28 +1,45 @@
-import matplotlib.pyplot as plt
-from matplotlib import style
-import numpy as np
-from statistics import mean
-
-style.use("ggplot")
-
-xs = np.array([1, 2, 3, 4, 5, 6], dtype=np.float64)
-ys = np.array([5, 4, 6, 5, 6, 7], dtype=np.float64)
+# sum of prime numbers between 1 to 100 ending with 7
 
 
-def best_fit_slope_and_intercept(xs, ys):
-    m = ((mean(xs) * mean(ys)) - mean(xs * ys)) / ((mean(xs) ** 2) - mean(xs**2))
-    b = mean(ys) - m * mean(xs)
-    return m, b
+# def prime(n):
+#     sum = 0
+#     for i in range(1, n + 1):
+#         if i % 10 == 7:
+#             for j in range(2, i):
+#                 if i % j == 0:
+#                     break
+#             else:
+#                 sum += i
+#     return sum
 
 
-m, b = best_fit_slope_and_intercept(xs, ys)
+# print(prime(100))
 
-regression_line = [(m * x) + b for x in xs]
+# create a matrix values 1-100  with * in left and right diagonal
+# def star(n):
+#
+#     for i in range(n):
+#         for j in range(n):
+#             if i == j or j == n - 1 - i:
+#                 print("*", end=" ")
+#                 n += 1
+#             else:
+#
+#                 print(n, end="  ")
+#         print()
 
-predict_x = 8
-predict_y = (m * predict_x) + b
 
-plt.scatter(xs, ys)
-plt.scatter(predict_x, predict_y, color="g")
-plt.plot(xs, regression_line)
-plt.show()
+def star(n):
+    a = 1
+    for i in range(n):
+        for j in range(n):
+            if i == j or j == n - 1 - i:
+                print("*", end=" ")
+                a += 1
+            else:
+                a += 1
+                print(a, end="  ")
+        print()
+
+
+star(10)
