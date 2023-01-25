@@ -8,10 +8,6 @@ class B1:
         print("B1 display", self.s)
 
 
-b = B1(10)
-B = B1(20)
-
-
 class B2:
     def __init__(self, t):
         self.s = t
@@ -25,7 +21,7 @@ class B2:
 class D(B1, B2):
     def __init__(self, t, t1, t2):
         super().__init__(t)
-        super(B1, self).__init__(self, t1)
+        super(B1, self).__init__(t1)  # type: ignore
         self.d = t2
         B1.display(self)
         B2.display(self)
