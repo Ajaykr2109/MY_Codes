@@ -15,8 +15,8 @@ def fib(n, memo):
     return memo[n]
 
 
-print(fib(500, memo))
-print(memo)
+print(fib(256, memo))
+# print(memo)
 
 et = time.process_time()
 # check time taken by the above code
